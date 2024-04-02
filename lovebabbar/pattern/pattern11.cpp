@@ -21,14 +21,35 @@ int main()
         {
             col = col + 1;
 
-            char ch = 'A'+row-1;
-            cout<<ch<<" ";
+            char ch = 'A' + row - 1;
+            cout << ch << " ";
         }
         cout << endl;
-        row=row+1;
+        row = row + 1;
     }
     return 0;
 }
 
+/*
+output:-
+A B C
+A B C
+A B C
+*/
 
+// #include <iostream>
+// using namespace std;
 
+// int main() {
+//     int row = 1;
+//     while (row <= 3) {
+//         int col = 1;
+//         while (col <= 3) {
+//             cout << char(64 + col) << " ";
+//             col++;
+//         }
+//         cout << endl;
+//         row++;
+//     }
+//     return 0;
+// }
