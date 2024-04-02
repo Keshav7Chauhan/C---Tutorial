@@ -1,8 +1,8 @@
 /*
 output:-
 A 
-B B
-C C C
+B C
+D E F
 */
 
 #include<iostream>
@@ -12,11 +12,13 @@ int main(){
     cin>>n;
 
     int row=1;
+    char count='A';
     while(row<=n){
         int col=1;
         while(col<=row){
-            char ch = 'A'+row-1;
-            cout<<ch<<" ";
+            
+            cout<<count<<" ";
+            count=count+1;
             col=col+1;
     }
     cout<<endl;
