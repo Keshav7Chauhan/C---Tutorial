@@ -1,3 +1,11 @@
+/*
+output:-
+* * * *
+* * * 
+* * 
+*   
+*/
+
 #include <iostream>
 using namespace std;
 int main()
@@ -8,13 +16,20 @@ int main()
     int row = 1;
     while (row <= n)
     {
-        int star = n-col;
-        while(star){
+        int star = n-row+1;
+        int col = 1;
+        while (star)
+        {
             cout<<"*";
-            star=star+1;
+            star = star-1;
+            
         }
-        col++;
+        while(col<=row){
+            
+            col=col+1;
+        }
+        cout << endl;
+        row = row + 1;
     }
-    
     return 0;
 }
